@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190718 13:48:31.216" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/neab/RobotFramework/Test1Web/flow_dress_sorting.robot" id="s1" name="Flow Dress Sorting">
+<test id="s1-t1" name="Sorting by price">
+<kw name="เข้าหน้าเว็บ">
+<kw name="Open" library="welcome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190718 13:48:31.364" level="INFO">Opening browser 'gc' to base url 'http://automationpractice.com'.</msg>
+<status status="PASS" endtime="20190718 13:48:44.908" starttime="20190718 13:48:31.364"></status>
+</kw>
+<status status="PASS" endtime="20190718 13:48:44.908" starttime="20190718 13:48:31.364"></status>
+</kw>
+<status status="PASS" endtime="20190718 13:48:44.908" starttime="20190718 13:48:31.363"></status>
+</kw>
+<kw name="เลือก Dress -&gt; Summer Dress">
+<kw name="Choose Dress Menu" library="welcome">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="block_top_menu"]/ul/li[2]/a</arg>
+</arguments>
+<msg timestamp="20190718 13:48:44.910" level="INFO">Clicking element 'xpath://*[@id="block_top_menu"]/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20190718 13:48:50.544" starttime="20190718 13:48:44.910"></status>
+</kw>
+<status status="PASS" endtime="20190718 13:48:50.544" starttime="20190718 13:48:44.909"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="categories_block_left"]/div/ul/li[3]/a</arg>
+</arguments>
+<msg timestamp="20190718 13:48:50.545" level="INFO">Clicking element 'xpath://*[@id="categories_block_left"]/div/ul/li[3]/a'.</msg>
+<status status="PASS" endtime="20190718 13:48:53.243" starttime="20190718 13:48:50.544"></status>
+</kw>
+<status status="PASS" endtime="20190718 13:48:53.243" starttime="20190718 13:48:44.909"></status>
+</kw>
+<kw name="เลือก Sort by Name A-Z">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id:selectProductSort</arg>
+<arg>name:asc</arg>
+</arguments>
+<msg timestamp="20190718 13:48:53.245" level="INFO">Selecting options from selection list 'id:selectProductSort' by value name:asc.</msg>
+<status status="PASS" endtime="20190718 13:48:53.312" starttime="20190718 13:48:53.244"></status>
+</kw>
+<status status="PASS" endtime="20190718 13:48:53.312" starttime="20190718 13:48:53.244"></status>
+</kw>
+<kw name="ผลต้องแสดงชื่อจาก A-Z ถูกต้อง">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>xpath://*[@id="center_column"]/ul/li[1]/div/div[2]/h5/a</arg>
+<arg>Printed Summer Dress</arg>
+</arguments>
+<status status="PASS" endtime="20190718 13:48:53.341" starttime="20190718 13:48:53.313"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>xpath://*[@id="center_column"]/ul/li[2]/div/div[2]/h5/a</arg>
+<arg>Printed Summer Dress</arg>
+</arguments>
+<status status="PASS" endtime="20190718 13:48:53.361" starttime="20190718 13:48:53.341"></status>
+</kw>
+<status status="PASS" endtime="20190718 13:48:53.362" starttime="20190718 13:48:53.313"></status>
+</kw>
+<tags>
+<tag>done sprint1</tag>
+</tags>
+<status status="PASS" endtime="20190718 13:48:53.362" critical="yes" starttime="20190718 13:48:31.363"></status>
+</test>
+<test id="s1-t2" name="Sorting Case 2">
+<tags>
+<tag>progress</tag>
+</tags>
+<status status="FAIL" endtime="20190718 13:48:53.363" critical="yes" starttime="20190718 13:48:53.362">Test case contains no keywords.</status>
+</test>
+<status status="FAIL" endtime="20190718 13:48:53.363" starttime="20190718 13:48:31.218"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">done sprint1</stat>
+<stat fail="1" pass="0">progress</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Flow Dress Sorting" pass="1">Flow Dress Sorting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

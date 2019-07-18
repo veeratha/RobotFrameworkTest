@@ -4,7 +4,7 @@ Resource  ../pages/welcome.robot  # ใช้ Include File ที่แยก
 
 *** Variables ***
 ${URL}   http://automationpractice.com
-${BROWSER}    gc
+${BROWSER}    headlesschrome
 
 *** Test Cases ***
 Sorting by price
