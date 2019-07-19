@@ -12,7 +12,7 @@ Call top 10 user
     # Check แบบตัวหนังสือ
     Should be equal as strings  200  ${res.status_code}
     ${len}=  Get Length  ${res.json()}
-    Should be equal  ${110}  ${len}
+    Should be equal  ${1100}  ${len}
     Should be equal  Bret  ${res.json()[0]["username"]}
 
     
