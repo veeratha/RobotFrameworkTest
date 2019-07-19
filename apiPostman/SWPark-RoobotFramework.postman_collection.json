@@ -18,7 +18,7 @@
 							"});",
 							"pm.test(\"Recored Count = 10\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.length).to.eql(100);",
+							"    pm.expect(jsonData.length).to.eql(10);",
 							"});",
 							"pm.test(\"First Username = Bret\", function () {",
 							"    var jsonData = pm.response.json();",
