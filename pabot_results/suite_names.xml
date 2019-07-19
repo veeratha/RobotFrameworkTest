@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190719 10:20:42.174" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite id="s1" name="Suites">
+<suite source="/Users/neab/RobotFramework/Test1Web" id="s1-s1" name="Test1Web">
+<suite source="/Users/neab/RobotFramework/Test1Web/flow_dress_sorting.robot" id="s1-s1-s1" name="Flow Dress Sorting">
+<test id="s1-s1-s1-t1" name="1.Sorting by price">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190719 10:20:42.308" starttime="20190719 10:20:42.308"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190719 10:20:42.309" starttime="20190719 10:20:42.309"></status>
+</kw>
+<tags>
+<tag>done sprint1</tag>
+</tags>
+<status status="PASS" endtime="20190719 10:20:42.309" critical="yes" starttime="20190719 10:20:42.308"></status>
+</test>
+<test id="s1-s1-s1-t2" name="2.Sorting by name">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190719 10:20:42.309" starttime="20190719 10:20:42.309"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190719 10:20:42.310" starttime="20190719 10:20:42.309"></status>
+</kw>
+<tags>
+<tag>progress</tag>
+</tags>
+<status status="PASS" endtime="20190719 10:20:42.310" critical="yes" starttime="20190719 10:20:42.309"></status>
+</test>
+<status status="PASS" endtime="20190719 10:20:42.310" starttime="20190719 10:20:42.191"></status>
+</suite>
+<status status="PASS" endtime="20190719 10:20:42.311" starttime="20190719 10:20:42.190"></status>
+</suite>
+<suite source="/Users/neab/RobotFramework/test2web" id="s1-s2" name="Test2Web">
+<suite source="/Users/neab/RobotFramework/test2web/test_google.robot" id="s1-s2-s1" name="Test Google">
+<test id="s1-s2-s1-t1" name="Open google">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190719 10:20:42.314" starttime="20190719 10:20:42.314"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190719 10:20:42.314" starttime="20190719 10:20:42.314"></status>
+</kw>
+<tags>
+<tag>goo</tag>
+</tags>
+<status status="PASS" endtime="20190719 10:20:42.314" critical="yes" starttime="20190719 10:20:42.314"></status>
+</test>
+<status status="PASS" endtime="20190719 10:20:42.315" starttime="20190719 10:20:42.312"></status>
+</suite>
+<status status="PASS" endtime="20190719 10:20:42.315" starttime="20190719 10:20:42.311"></status>
+</suite>
+<status status="PASS" endtime="20190719 10:20:42.316" starttime="20190719 10:20:42.176"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">done sprint1</stat>
+<stat fail="0" pass="1">goo</stat>
+<stat fail="0" pass="1">progress</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="3">Suites</stat>
+<stat fail="0" id="s1-s1" name="Test1Web" pass="2">Suites.Test1Web</stat>
+<stat fail="0" id="s1-s1-s1" name="Flow Dress Sorting" pass="2">Suites.Test1Web.Flow Dress Sorting</stat>
+<stat fail="0" id="s1-s2" name="Test2Web" pass="1">Suites.Test2Web</stat>
+<stat fail="0" id="s1-s2-s1" name="Test Google" pass="1">Suites.Test2Web.Test Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

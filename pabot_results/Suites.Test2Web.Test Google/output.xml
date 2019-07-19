@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190719 10:20:42.481" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite id="s1" name="Suites">
+<suite source="/Users/neab/RobotFramework/test2web" id="s1-s1" name="Test2Web">
+<suite source="/Users/neab/RobotFramework/test2web/test_google.robot" id="s1-s1-s1" name="Test Google">
+<test id="s1-s1-s1-t1" name="Open google">
+<kw name="เปิดเว็บ">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20190719 10:20:42.625" level="INFO">Opening browser 'gc' to base url 'http://www.google.com'.</msg>
+<status status="PASS" endtime="20190719 10:20:46.328" starttime="20190719 10:20:42.624"></status>
+</kw>
+<status status="PASS" endtime="20190719 10:20:46.328" starttime="20190719 10:20:42.624"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190719 10:20:46.404" starttime="20190719 10:20:46.329"></status>
+</kw>
+<tags>
+<tag>goo</tag>
+</tags>
+<status status="PASS" endtime="20190719 10:20:46.404" critical="yes" starttime="20190719 10:20:42.624"></status>
+</test>
+<status status="PASS" endtime="20190719 10:20:46.405" starttime="20190719 10:20:42.499"></status>
+</suite>
+<status status="PASS" endtime="20190719 10:20:46.407" starttime="20190719 10:20:42.498"></status>
+</suite>
+<status status="PASS" endtime="20190719 10:20:46.407" starttime="20190719 10:20:42.482"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">goo</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="1">Suites</stat>
+<stat fail="0" id="s1-s1" name="Test2Web" pass="1">Suites.Test2Web</stat>
+<stat fail="0" id="s1-s1-s1" name="Test Google" pass="1">Suites.Test2Web.Test Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

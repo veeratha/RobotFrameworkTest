@@ -1,0 +1,22 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Test2Web                                                               
+==============================================================================
+Suites.Test2Web.Test Google                                                   
+==============================================================================
+Open google                                                           | PASS |
+------------------------------------------------------------------------------
+Suites.Test2Web.Test Google                                           | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites.Test2Web                                                       | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  /Users/neab/RobotFramework/pabot_results/Suites.Test2Web.Test Google/output.xml

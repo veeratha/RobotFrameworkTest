@@ -1,26 +1,31 @@
 *** Settings ***
 Library   SeleniumLibrary
 Resource  ../pages/welcome.robot  # ใช้ Include File ที่แยก
-
+Suite Setup  เข้าหน้าเว็บ
+Suite Teardown  Close Browser
+Test Teardown  กลับหน้าแรก
+#Test Teardown  Close Browser   #สำหรับจบ Test Case
 *** Variables ***
 ${URL}   http://automationpractice.com
-${BROWSER}    headlesschrome
+${BROWSER}    gc
 
 *** Test Cases ***
-Sorting by price
+1.Sorting by price
 #Tag สำหรับ แยกรัน Process
     [Tags]  done sprint1 
-    เข้าหน้าเว็บ
+    #เข้าหน้าเว็บ  #ย้ายไปเปิดที่ Suite Setup ด้านบน 
     เลือก Dress -> Summer Dress
     เลือก Sort by Name A-Z
     ผลต้องแสดงชื่อจาก A-Z ถูกต้อง
 
-Sorting Case 2
+
+2.Sorting by name
     [Tags]  progress
-    เข้าหน้าเว็บ
+    #เข้าหน้าเว็บ  #ย้ายไปเปิดที่ Suite Setup ด้านบน 
     เลือก Dress -> Summer Dress
     เลือก Sort by Name A-Z
     ผลต้องแสดงชื่อจาก A-Z ถูกต้อง
+
 
 *** Keywords ***
 เข้าหน้าเว็บ
@@ -37,3 +42,6 @@ Sorting Case 2
 ผลต้องแสดงชื่อจาก A-Z ถูกต้อง
     Wait Until Element Contains   xpath://*[@id="center_column"]/ul/li[1]/div/div[2]/h5/a   Printed Summer Dress
     Wait Until Element Contains   xpath://*[@id="center_column"]/ul/li[2]/div/div[2]/h5/a   Printed Summer Dress
+
+กลับหน้าแรก
+    welcome.Home
